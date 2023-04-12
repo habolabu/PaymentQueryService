@@ -7,7 +7,7 @@ server:
 # spring config
 spring:
   application:
-    name: ${APPLICATION_NAME:PAYMENT-QUERY-SERVICE}
+    name: ${APPLICATION_NAME:a7ec59adf90532f3ccd62cb820478ded4a866668f7a3e8b0d1b373a745ea45aa}
 
   # mongo config
   data:
@@ -26,9 +26,3 @@ spring:
     concurrentConsumers: ${RABBITMQ_CONCURRENT_CONSUMERS:3}
     maxConcurrentConsumers: ${RABBITMQ_MAX_CONCURRENT_CONSUMERS:10}
     receiveTimeout: ${RABBITMQ_RECEIVE_TIMEOUT:100000}
-
-# log config
-logging:
-  level:
-    root: debug
-    org.springframework.data.mongodb.core.MongoTemplate: debug
