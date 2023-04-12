@@ -38,11 +38,10 @@ public class BillFindAllBySelfController {
     public ResponseEntity<IBaseResponse> findAllBillBySelf(
             @RequestParam(required = false, defaultValue = "1") Integer page
     ) {
-        final Map<String, String> account = SecurityUtils.getCurrentAccount(rabbitTemplate);
         return new ResponseEntity<>(
                 billFindAllByUserIdService.execute(
                         new BillFindAllByUserIdRequest()
-                                .setUserId(Integer.parseInt(account.get("userId")))
+                                .setUserId(SecurityUtils.getCurrentAccount(rabbitTemplate).getUserId())
                                 .setPage(page)
                 ),
                 HttpStatus.OK
