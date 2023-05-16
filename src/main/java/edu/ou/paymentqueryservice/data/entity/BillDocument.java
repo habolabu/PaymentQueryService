@@ -25,7 +25,7 @@ public class BillDocument implements Serializable {
     private Date paidDate;
     @JsonIgnore
     private int paymentTypeId;
-    private int total;
+    private double total;
     @JsonIgnore
     private int userId;
     private Date createdAt;

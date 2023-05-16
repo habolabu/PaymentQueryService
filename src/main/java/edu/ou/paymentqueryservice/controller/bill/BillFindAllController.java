@@ -48,8 +48,8 @@ public class BillFindAllController {
             @RequestParam(required = false) Integer userId,
             @RequestParam(required = false) Integer billStatusId,
             @RequestParam(required = false) Integer paymentTypeId,
-            @RequestParam(required = false) Integer bTotal,
-            @RequestParam(required = false) Integer eTotal,
+            @RequestParam(required = false) Double bTotal,
+            @RequestParam(required = false) Double eTotal,
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
             Date bPaidDate,
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)

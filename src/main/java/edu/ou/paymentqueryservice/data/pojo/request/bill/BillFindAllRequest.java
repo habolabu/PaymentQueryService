@@ -18,8 +18,8 @@ public class BillFindAllRequest implements IBaseRequest {
     private Integer userId;
     private Integer billStatusId;
     private Integer paymentTypeId;
-    private Integer bTotal;
-    private Integer eTotal;
+    private Double bTotal;
+    private Double eTotal;
     private Date bPaidDate;
     private Date ePaidDate;
     private Date bCreatedAt;
